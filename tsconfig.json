@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "es5", // Set the target ECMAScript version (e.g., compatible with browsers)
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ], // Include type definitions for DOM and potential future features
+    "allowJs": true, // Allow compilation of existing JavaScript files
+    "skipLibCheck": true, // Skip type checking of declaration files from the "lib" option
+    "esModuleInterop": true, // Enable resolving ES modules from CommonJS modules
+    "allowSyntheticDefaultImports": true, // Allow synthetic default imports
+    "strict": true, // Enable stricter type checking
+    "forceConsistentCasingInFileNames": true, // Enforce consistent casing in file names
+    "noFallthroughCasesInSwitch": true, // Prevent accidental fallthrough in switch statements
+    "module": "esnext", // Use ES modules (optional, can be left out)
+    "moduleResolution": "node", // Use Node.js module resolution strategy
+    "resolveJsonModule": true, // Allow resolving JSON modules
+    "isolatedModules": true, // Treat each file as an independent module
+    "jsx": "preserve", // Preserve original JSX syntax for Next.js compatibility
+    "incremental": true // Enable incremental compilation for faster rebuilds (optional)
+    ,
+    "noEmit": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts", // Include Next.js environment variable types
+    "**/*.ts", // Include all TypeScript files
+    "**/*.tsx", // Include all JSX files (for Next.js)
+    "src/components/BlogGallery/BlogGallery.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ] // Exclude the node_modules directory
+}
