@@ -7,9 +7,9 @@ if you haven't installed brew, check this [link](https://brew.sh/) to install it
 
 2. after install node, in the root directory run command
 
-   ```
-   npm install
-   ```
+  ```
+  npm install
+  ```
 3. then run command below to start the local development server and access this Next application at 'http://localhost:3000'
   ```
   npm run dev
